@@ -38,3 +38,47 @@ console.log(typeof myObj);
 console.log(typeof heros);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3  Reference for How Typeof Works in JS
+
+
+
+//Stack (Primitive) , Heap (Non-Primitive)
+
+let myname = "Yash"
+let altname = "Akash"
+
+console.log(myname)
+console.log(altname);
+
+altname = "Batla"
+console.log(myname)
+console.log(altname);
+
+let myobj ={
+    name: "Yash",
+    gender: "Male"
+}
+
+let altobj = myObj
+
+altobj.name = "Ash"
+console.log(myObj.name);
+console.log(altobj.name);
+
+/*
+Stack == used For(Primitive Data Types)
+Heap == used For(Non-Primitive / Reference Data Types)
+
+Stack :
+let email = "abcd@gmaildotocom"
+let newEmail = email;
+***here if changes made in newEmail it will not change the email because here in stack it creates COPY email*** 
+
+Heap:
+let userName = {
+email = "abcd.com"
+name = "abcd"
+
+let anotherUser = userName;
+***here if changes made in anotherUser.email then there is changes made in userName.email too****
+
+*/
