@@ -1,0 +1,55 @@
+// Literal , Constructor  2 Ways to Declare Objects 
+// Object.create // Constructor se Singleton banta hai  
+
+// Object Literals 
+const mySymb= Symbol ("key1")
+const JSUser = {
+    name : "Yash",
+    "full name": "Yash Agarwal",
+    age : 22, 
+    [mySymb]: "key1",
+    location: "Mumbai", 
+    email: "yashagarwal@google.com",
+    isLoggedIn: false,
+    lastLoginDays: ["Friday", "Saturday", "Monday"]
+}
+
+// console.log(JSUser);
+// console.log(JSUser.name);
+// console.log(JSUser["email"]);
+// console.log(JSUser["full name"]);
+// console.log(typeof JSUser[mySymb]);
+
+const sym = Symbol ("Key2")
+
+
+
+JSUser.greeting = function (){
+    console.log("Hello ");
+}
+JSUser.greetingTwo = function (){
+    console.log(`Hello 2 ,${this.name} `)
+    console.log(`Hello 2 ,${this["full name"]} `)
+}
+console.log(JSUser.greeting);
+console.log(JSUser.greeting());
+console.log(JSUser.greetingTwo());
+
+
+const myObj = {
+    name: "Yash", 
+    age: 22 ,
+    gender: "M", 
+    [sym]: ("Key3")
+}
+
+// console.log(myObj.name);
+// console.log(myObj["name"]);
+// console.log(typeof sym);
+// console.log(typeof Obj[sym]);
+myObj.name = "Yash Agarwal"
+// console.log(myObj["name"]);
+// Object.freeze(myObj)
+myObj.name = "Yash Vandana Agarwal"
+// console.log(myObj["name"]);
+// console.log(myObj);  //Printed to confirm datatype of [sym]
