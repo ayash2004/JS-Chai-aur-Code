@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Learning </title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black" >
+    <div>
+        <h1 id= "title" class="heading">Learning DOM on Chai aur Code <span style="display: none;"> Test Text</span> </h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem, ipsum dolor.</h2>
+        <input type="password" name="pass" id="">
+
+    <ul>
+        <li class = "list-item ">One </li>
+        <li class = "list-item ">Two</li>
+        <li class = "list-item ">Three</li>
+    </ul>
+    </div>
+    <p id="demo">Yash</p>
+    <script>
+        document.getElementById("demo").textContent = "The Heading has been Changed"
+    </script>
+</body>
+</html>
+
+<!-- 
+1.innerHTML: returns all html nodes 
+2.textContent : returns all text content
+3.innerText : gives the text in the selected node
+4.querySelector
+5.querySelectorAll
+6.getAttribute
+7.setAttribute -->
