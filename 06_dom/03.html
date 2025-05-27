@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+    // div.innerText = "Chai aur code"
+    const addText = document.createTextNode("Chai aur code")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+
+
+    // const bgccolor = ["Red","Blue","Green","Yellow"]
+    // const text = ["Red","Blue","Green","Yellow"]
+
+    // function generateText(bgccolor, text){
+    //     const div = document.createElement('div')
+    //     div.className = "main"
+    //     div.style.backgroundColor = bgccolor;
+    //     div.innerHTML = text;
+
+    //     // const textnode = document.createTextNode(`${text}`)
+    //     // div.appendChild(textnode)
+    //     document.body.appendChild(div)
+    // }
+
+    // bgccolor.forEach ( (text, index ) => generateText(text, bgccolor[index] ))
+
+    const colors= [ "red" , "green" , "blue" , "purple" , "orange" , "pink"]
+    const texts= [ "red" , "green" , "blue" , "purple" , "orange" , "pink"]
+    const bgcColor = [ "red" , "green" , "blue" , "purple" , "orange" , "pink"]
+    function colorchange(colorss , textss, bgcColor){    
+    const div = document.createElement('div')
+    div.className = "divone"
+    div.id="o"
+    const text = document.createTextNode(textss)
+    div.appendChild(text)
+    // div.style.color = "white"
+    div.style.backgroundColor = bgcColor;
+    document.body.appendChild(div)
+}
+
+    for (let i = 0; i < colors.length; i++) {
+        colorchange(colors[i] , texts[i], bgcColor[i])
+        
+    }
+
+    // const arr1 = ['ashish','bhanu','naveen','gautam']
+    // const arr2 = ['blue','green','yellow','red']
+    // arr1.forEach( ( text,index ) => multipleButtons(text,arr2[index]))
+   
+    // function multipleButtons(text,bgColor)
+    // {
+    //  const button = document.createElement('button')
+    //  console.log(button)
+    //  button.setAttribute('className','firstbutton')
+    //  button.setAttribute('type','submit')
+    //  button.style.backgroundColor = `${bgColor}`
+    //  button.style.cursor = 'pointer'
+    //  button.style.padding = "12px"
+    //  button.style.borderRadius = "10px"
+    //  const textnode = document.createTextNode(`${text}`)
+    //  button.appendChild(textnode)
+    //  document.body.appendChild(button)
+    // }
+
+</script>
+</html>
