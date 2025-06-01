@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval</title>
+</head>
+<body>
+    <h1 id=" h1">Chai aur Code </h1>
+    <button class="start">Start</button>
+    <button class="stop">Stop</button>
+</body>
+<script>
+let yash; 
+const sayTime = function (str){
+    const date = new Date()
+    console.log(str, date.toLocaleTimeString())
+}
+document.querySelector('.start').addEventListener('click',function() {
+    if (!yash){
+    yash = setInterval(sayTime,2000, "Hello Yash Time is: ")
+    }
+})
+
+document.querySelector('.stop').addEventListener('click', function(){
+    clearInterval(yash);
+    yash = null;
+    console.log('Stopped the Timer ');
+})
+</script>
+</html>
