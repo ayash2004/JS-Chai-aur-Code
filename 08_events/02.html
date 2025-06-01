@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout </title>
+</head>
+<body>
+    <h1 id=" h1">Chai aur Code </h1>
+    <button class="stop">Stop</button>
+</body>
+
+<script>
+    // const saymyName = function (){ console.log("Yash")}
+    // const changeme = function () {
+    //     document.querySelector('h1').innerHTML = "Changed the Text"
+    //     console.log("Changed the Text Successfully")    
+    // }
+
+    // const change = setTimeout(changeme, 5000)
+
+    //     document.querySelector('#stop').addEventListener('click',function(){
+    //         clearTimeout(change)
+    //         console.log("Stooped!!!")
+    //     })
+
+    // const stop = setTimeout(changeme, 5000)
+
+    // document.querySelector('#stop').addEventListener('click', function(){
+    //     clearTimeout(stop)
+    //     console.log("STOPPED")
+    // })
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JS series"
+        console.log("Changed the Text");
+        
+    }
+
+    const changeMe = setTimeout(changeText, 5000)
+    // clearTimeout(changeMe)
+    document.querySelector('.stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+
+    // document.querySelector(".stop").addEventListener('click', function(){
+    //     clearInterval(changeMe)
+    //     console.log("Stoppped meeee")
+    // })
+    
+</script>
+</html>
