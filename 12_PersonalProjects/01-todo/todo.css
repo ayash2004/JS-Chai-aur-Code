@@ -1,0 +1,16 @@
+.task-text.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+.complete-btn {
+  margin-left: 10px;
+  background-color: lightgreen;
+  border: none;
+  cursor: pointer;
+}
+.delete-btn {
+  margin-left: 5px;
+  background-color: lightcoral;
+  border: none;
+  cursor: pointer;
+}
